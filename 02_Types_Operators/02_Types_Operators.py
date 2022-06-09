@@ -90,20 +90,44 @@ print( sayi )
     **    :üs alma(5**2=25)
 """
 
-x1 = int( input( "Bölünecek sayıyı girin" ) )
-x2 = int( input( "Bölen sayıyı girin" ) )
+# x1 = int( input( "Bölünecek sayıyı girin" ) )
+# x2 = int( input( "Bölen sayıyı girin" ) )
+#
+# kalan = x1 % x2  # kalan
+# bolum = x1 / x2  # bölüm
+# tam_bolum = x1 // x2  # tam bölüm
+#
+# sonuc = f"""
+#         Bölünen sayı            {x1}
+#         Bölen sayı              {x2}
+#         Kalan                   {kalan}
+#         Bölüm                   {bolum}
+#         Tam Bölüm               {tam_bolum}
+# """
+# print( sonuc )
 
-kalan = x1 % x2  # kalan
-bolum = x1 / x2  # bölüm
-tam_bolum = x1 // x2 #tam bölüm
+sayi1 = 100
+sayi2 = 200
 
-sonuc = f"""
-        Bölünen sayı            {x1}
-        Bölen sayı              {x2}
-        Kalan                   {kalan}
-        Bölüm                   {bolum}
-        Tam Bölüm               {tam_bolum}
-"""
-print( sonuc )
+esitlik_kontrol =  sayi1 == sayi2
+esitlik_kontrol2 = sayi1 is sayi2
+esitlik_kontrol3 =  sayi is not sayi2  # not keyword'ü ifadeyi ters çevirir.
+esitlik_kontrol4 =  sayi != sayi2
 
+print(esitlik_kontrol)
+print(esitlik_kontrol2)
+print(esitlik_kontrol3)
+print(esitlik_kontrol4)
 
+ilce = "kadiköy"
+
+print("adi" in  ilce) # in keyword içeriyor mu?
+
+## SORU: Kullanıcıdan alınan 1.sayının kullanıcının girdiği
+# 2. sayıya kuvvetini hesaplayarak ekrana yazdıran prog.
+
+taban = int(input("Lütfen tabanı giriniz: "))
+us = int(input("Lütfen üssü giriniz: "))
+
+sonuc = taban**us
+print(f"{taban} sayısının {us}  ussunun degeri = {sonuc}")
