@@ -33,7 +33,7 @@ Bilgi İşlem için        3
                 dosya.write(str(isim) + "\t\t" + str(soyisim) + "\t\t" + str(dogumtarihi) + "\n")
                 dosya.write("Personel bölümü : İnsan Kaynakları\n")
                 dosya.close()
-                dosya=open("Ik.txt", mode="a+", encoding="utf8")
+                dosya=open("IK.txt", mode="a+", encoding="utf8")
                 dosya.write(str(isim) + "\t\t" + str(soyisim) + "\t\t" + str(dogumtarihi) + "\n")
                 dosya.close()
             elif personelbolum==2:
