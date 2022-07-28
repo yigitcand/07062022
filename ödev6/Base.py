@@ -11,7 +11,8 @@ class Base(ABC):
     def UrunYaz(self):
         dosya = open("Ürünler.txt", mode="a+", encoding="utf-8")
         dosya.write(self.isim+"\n")
-        dosya.write(f"""İsim:               {self.isim}
+        dosya.write(f"""
+İsim:               {self.isim}
 Fiyat:              {self.fiyat}
 Marka:              {self.marka}
 Model:              {self.model}
