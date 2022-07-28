@@ -11,8 +11,7 @@ class Drone(Base):
         dosya.write(f"""
 Uçuş Mesafesi:      {self.ucus_mesafesi}
 Sarj Süresi:        {self.sarj_suresi}
-Kamera Çözünürlüğü: {self.kamera_cozunurlugu}
-""")
+Kamera Çözünürlüğü: {self.kamera_cozunurlugu}""")
         dosya.close()
     def UrunListele(self):
         super().UrunListele()
